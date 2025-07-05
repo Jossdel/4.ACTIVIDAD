@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>_4.ACTIVIDAD.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConversorDivisas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConversorDivisas.Designer.cs">
+      <DependentUpon>ConversorDivisas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CálculodeImpuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CálculodeImpuestos.Designer.cs">
+      <DependentUpon>CálculodeImpuestos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +75,18 @@
     <Compile Include="RegistrosDeUsuarios.Designer.cs">
       <DependentUpon>RegistrosDeUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="SeriedeFibonacci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeriedeFibonacci.Designer.cs">
+      <DependentUpon>SeriedeFibonacci.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ConversorDivisas.resx">
+      <DependentUpon>ConversorDivisas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CálculodeImpuestos.resx">
+      <DependentUpon>CálculodeImpuestos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

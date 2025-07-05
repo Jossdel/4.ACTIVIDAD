@@ -10,41 +10,43 @@ using System.Windows.Forms;
 
 namespace _4.ACTIVIDAD
 {
-    public partial class FormMdi : Form
+    public partial class tabsPrincipal : Form
     {
-        public FormMdi()
+        public tabsPrincipal()
         {
             InitializeComponent();
         }
          
-        private void registroToolStripMenuItem_Click(object sender, EventArgs e)
+
+
+
+
+        private void convertirDivisasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RegistrosDeUsuarios registrosDeUsuarios = new RegistrosDeUsuarios();
-            registrosDeUsuarios.ShowDialog();
+            ConversorDivisas conv = new ConversorDivisas();
+            conv.MdiParent = this; // Establece el formulario actual como padre del nuevo formulario
+            conv.Show();
         }
 
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void registroToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void registroDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RegistrosDeUsuarios frm = new RegistrosDeUsuarios();
             frm.MdiParent = this; // Establece el formulario actual como padre del nuevo formulario
             frm.Show();
-
-
         }
 
-    
+        private void cálculoDeImpuestosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Calculo_de_Impuestos conv = new Calculo_de_Impuestos();
+            conv.MdiParent = this; // Establece el formulario actual como padre del nuevo formulario
+            conv.Show();
+        }
 
-
-
-
-
-
+        private void serieDeFibonacciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Serie_de_Fibonacci conv = new Serie_de_Fibonacci();
+            conv.MdiParent = this; // Establece el formulario actual como padre del nuevo formulario
+            conv.Show();
+        }
     }
 }

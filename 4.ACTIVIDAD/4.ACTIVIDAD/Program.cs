@@ -16,7 +16,8 @@ namespace _4.ACTIVIDAD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMdi());
+            Application.Run(new tabsPrincipal());
+
         }
     }
 }
