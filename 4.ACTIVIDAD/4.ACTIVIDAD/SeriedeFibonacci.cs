@@ -16,5 +16,31 @@ namespace _4.ACTIVIDAD
         {
             InitializeComponent();
         }
+
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+            txtResultado.Clear();
+
+            if (int.TryParse(txtLimite.Text, out int limite) && limite >= 0)
+            {
+                int a = 0, b = 1;
+                string resultado = "0";
+
+                while (b <= limite)
+                {
+                    resultado += ", " + b;
+                    int temp = b;
+                    b = a + b;
+                    a = temp;
+                }
+
+                txtResultado.Text = resultado;
+            }
+            else
+            {
+                MessageBox.Show("Por favor, introduce un número entero válido y no negativo.", "Error");
+            }
+        }
+
     }
 }

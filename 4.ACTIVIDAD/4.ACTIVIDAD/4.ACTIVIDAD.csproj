@@ -102,6 +102,9 @@
     <EmbeddedResource Include="RegistrosDeUsuarios.resx">
       <DependentUpon>RegistrosDeUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SeriedeFibonacci.resx">
+      <DependentUpon>SeriedeFibonacci.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
